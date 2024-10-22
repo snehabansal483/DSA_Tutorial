@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA TUTORIAL</title>
+    <link rel="stylesheet" href="STYLE_.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo">educaDSA</a>
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#courses">dsa</a>
+                <a href="#contact">contact</a>
+
+
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </header>
+
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>Let's Learn
+                    <span>DSA</span>
+                </h3>
+                <a href="#contact" class="btn">contact us</a>
+            </div>
+            <div class="image">
+                <img src="img\Learning-amico.png"/>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="image">
+                <img src="img/Learning languages-cuate.png" width="500px" height="500px"/>
+            </div>
+            <div class="content">
+                <h3>Why Choose Us?</h3>
+                <p>Choose us for mastering data structures and algorithms because we offer a comprehensive curriculum taught by industry experts, practical hands-on projects, and interactive learning tools. Our tailored approach and strong community support ensure you gain both theoretical knowledge and practical skills essential for career advancement.</p>
+                <a href="#contact" class="btn">contact us</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="courses" id="courses">
+        <h1 class="heading">our <span>DSA Tutorial</span></h1>
+        <div class="swiper course-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <image src="img/stack.jpg"/>
+                    <h3>Stack data structure</h3>
+                    <p>A Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).<br><a href="Tutorial/stack_theory.html" target="_blank"><span>click here</span></a></p>
+                </div>
+                <div class="swiper-slide slide">
+                    <image src="img/queue.png"/>
+                    <h3>Queue data structure</h3>
+                    <p>A Queue Data Structure is a fundamental concept in computer science used for storing and managing data in a specific order. It follows the principle of “First in, First out” (FIFO) <a href="Tutorial/queue_theory.html" target="_blank"><span>click here</span></a></p>
+                </div>
+                <div class="swiper-slide slide">
+                    <image src="img/min_and_max_in_python.png"/>
+                    <h3>Maximum & Minimum</h3>
+                    <p>Given an array of size N. The task is to find the maximum and the minimum element of the array using the minimum number of comparisons.<br><a href="Tutorial/linkedlist_theory.html" target="_blank"><span>click here</span></a></p>
+                </div>
+                <div class="swiper-slide slide">
+                    <image src="img/sorting.png"/>
+                    <h3>Sorting Algorithm</h3>
+                    <p>A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements.<a href="Tutorial/sorting_theory.html" target="_blank"><span>click here</span></a> </p>
+                </div>
+                <div class="swiper-slide slide">
+                    <image src="img/backtracking.jpg"/>
+                    <h3>Backtracking</h3>
+                    <p>Backtracking is like trying different paths, and when you hit a dead end, you backtrack to the last choice and try a different route. It’s like a method for finding the right way through a complex choices.<a href="Tutorial/theory.html" target="_blank"><span>click here</span></a>  </p>
+                </div>
+                
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="img/Contact us-amico.png"/>
+            </div>
+            <form action="/" method="post">
+                <span>your name</span>
+                <input type="text" required placeholder="Enter your Name" maxlength="50"
+                name="name" class="box">
+                <span>your email</span>
+                <input type="email" required placeholder="Enter your email" maxlength="50" name="email" class="box">
+                <span>your number</span>
+                <input type="number" required placeholder="Enter your number" maxlength="9999999999" min="0" name="number" class="box" onkeypress="if(this.value.length==10) return false">
+                <select name="courses" class="box">
+                    <option value="" disabled selected>select the courses--</option>
+                    <option value="web devlopment">web devlopment</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="graphic designing">graphic designing</option>
+                    <option value="Andriod devlopment">Andriod devlopment</option>
+                    <option value="Cyber security">cyber security</option>
+                    <option value="artifical intelligence">artifical intelligence</option>
+                </select>
+                <span>your gender</span>
+                <div class="radio">
+                <input type="radio" value="male" id="male" name="gender">
+                <label for="male">male</label>
+                <input type="radio" value="female" id="female" name="gender">
+                <label for="female">female</label>
+            
+                </div>
+                <input type="submit" value="send message" class="btn" name="send">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <section>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+        </section>
+        <span
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script_.js"></script>
+    
+</body>
+</html>

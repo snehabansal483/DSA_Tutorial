@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: wheat;
+}
+
+.container {
+    text-align: center;
+}
+
+.queue-container {
+    margin: 20px auto;
+    width: 500px;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+}
+
+.queue-item {
+    width: 180px;
+    height: 30px;
+    margin: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+}
+
+.queue-item:first-child::before {
+    content: 'Front';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    background-color: #28a745;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.queue-item:last-child::after {
+    content: 'Rear';
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    font-size: 16px;
+    color:#fff;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max_Min Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .chart-container {
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        .bar {
+            display: inline-block;
+            width: 30px;
+            margin: 0 2px;
+            background-color: #3498db;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .bar.max {
+            background-color: #e74c3c;
+        }
+        .bar.min {
+            background-color: #2ecc71;
+        }
+        .bar span {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button a{
+            text-decoration: none;
+            color:white;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        input {
+            padding: 8px;
+            font-size: 14px;
+            width: 80%;
+            max-width: 400px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <input type="text" id="dataInput" placeholder="Enter numbers separated by commas (e.g., 25, 40, 35)">
+        <button onclick="visualizeData()">Visualize Data</button>
+        <div id="chart"></div>
+        <div class="result" id="result"></div>
+        <button><a href="home.html">Back</a></button>
+    </div>
+
+    <script>
+        function visualizeData() {
+            // Get input from the user
+            const input = document.getElementById('dataInput').value;
+            
+            // Convert input string to an array of numbers
+            const data = input.split(',').map(num => parseFloat(num.trim())).filter(num => !isNaN(num));
+            
+            // Check if the data is valid
+            if (data.length === 0) {
+                alert('Please enter valid numbers separated by commas.');
+                return;
+            }
+
+            // Find the maximum and minimum values in the data
+            const maxValue = Math.max(...data);
+            const minValue = Math.min(...data);
+
+            // Get the chart container and result display elements
+            const chart = document.getElementById('chart');
+            const result = document.getElementById('result');
+
+            // Clear previous visualization if any
+            chart.innerHTML = '';
+            result.innerHTML = '';
+
+            // Create bars for each data point
+            data.forEach(value => {
+                const bar = document.createElement('div');
+                bar.className = 'bar';
+                bar.style.height = `${value * 3}px`; // Scaling the height for better visibility
+                bar.innerHTML = `<span>${value}</span>`;
+
+                // Highlight the max and min values
+                if (value === maxValue) {
+                    bar.classList.add('max');
+                }
+                if (value === minValue) {
+                    bar.classList.add('min');
+                }
+
+                chart.appendChild(bar);
+            });
+
+            // Display the max and min values
+            result.innerHTML = `Maximum Value: ${maxValue}, Minimum Value: ${minValue}`;
+        }
+    </script>
+</body>
+</html>

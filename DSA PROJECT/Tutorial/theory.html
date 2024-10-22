@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory</title>
+    <style>
+        body,html{
+            text-transform: capitalize;
+            padding:0;
+            margin:0;
+            background-color: cornflowerblue;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+        .content{
+            display:flex;
+            flex-wrap: nowrap;
+        }
+        .text h1{
+           font-size: 3rem;
+           text-align: center;
+
+        }
+        .text p{
+            font-size:1.3rem;
+            text-align: center;
+            color:purple;
+            margin-left:10px;
+            line-height: 1.5;
+            
+        }
+        .image{
+            width:500px;
+            height:500px;
+        }
+        .text-1{
+            font-size:3rem;
+            text-align:center;
+
+        }
+        .queen{
+            display:flex;
+            margin: 10px 20px;
+        }
+        .content-1{
+           text-align: center;
+           
+        }
+        .content-1 h1{
+            font-size:4rem;
+            margin:50px;
+        }
+        .content-1 p{
+            color:purple;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        .content-1 button{
+            border:2px solid black;
+            border-radius:25px;
+            padding:15px 30px;
+            background-color: lightblue;
+            border-bottom: 4px solid black;
+        }
+        .content-1 a{
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+           
+        }
+        .content-1 button:hover{
+            background-color: blue;
+        }
+        .content-1 a:hover{
+            color:white;
+        }
+        @media screen and (max-width: 767px){
+           .content{
+            flex-direction: column;
+           }
+           .text p{
+            font-size:1rem;
+            line-height: 1;  
+           }
+           .image{
+            width:320px;
+            height: 320px;
+           }
+           .queen{
+            flex-direction: column;
+        }
+        .content-1 h1{
+            font-size:2rem;
+        }
+        .content-1 p{
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        }
+        @media screen and (min-width:768px) and (max-width: 1023px){
+            .content{
+            flex-direction: column;
+           }
+           .queen{
+            flex-direction: column-reverse;
+        }
+            /* .text p{
+            font-size:1.2rem;
+            line-height: 1;  
+           }
+           .content-1 h1{
+            font-size:2rem;
+        }
+        .content-1 p{
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        .image img{
+            margin:0 50px;
+        }
+ */
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="content">
+    <div class="text">
+    <h1>backtracking</h1>
+    <p>Backtracking is a problem-solving algorithmic technique that involves finding a<br> solution incrementally by trying different options and undoing them if they<br> lead to a dead end. It is commonly used in situations where you need to explore<br> multiple possibilities to solve a problem, like searching for a path in a maze<br> or solving puzzles like Sudoku. When a dead end is reached, the<br> algorithm backtracks to the previous decision point and explores a different<br> path until a solution is found or all possibilities have been exhausted.</p>
+    </div>
+    <div class="image">
+        <img src="img/Chess-rafiki.svg"/>
+    </div>
+    </div> 
+    <div class="queen">
+        <div class="image">
+            <img src="img/Chess-pana.svg"/>
+        </div>
+        <div class="content-1">
+            <h1>Lets Understand <br>N-Queens problem</h1>
+            <p>The N-Queens problem involves placing N queens on an N×N chessboard so that<br> no two queens threaten each other. This means no two queens can<br> share the same row, column, or diagonal. The algorithm<br> to solve this problem is typically implemented using backtracking. </p>
+            <button><a href="Main.html">Get started</a></button>
+        </div>
+
+     </div>
+
+    
+    
+    
+</body>
+</html>

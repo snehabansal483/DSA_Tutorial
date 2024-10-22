@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stack tutorial</title>
+    <style>
+        html,body{
+            text-transform: capitalize;
+            margin:0;
+            padding:0;
+            background-color:darkcyan;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        .text-container{
+            text-align: center;
+            display:flex;
+        }
+        .text h1{
+            color:white;
+            font-size:3rem;
+        }
+        .text p{
+            color:burlywood;
+            font-size:1.5rem;
+        }
+        .image img{
+            width:400px;
+            height:400px;
+            border-radius: 50%;
+            padding:30px;
+        }
+        .list p{
+            color:white;
+        }
+        .list{
+            text-align: start;
+            font-size:1.5rem;
+            font-weight: bold;
+            color:burlywood;
+        }
+        .btn{
+            text-align:center;
+            margin:30px;
+            margin-bottom: 20px;
+        }
+        .btn a{
+            text-decoration: none;
+            color:black;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .btn button{
+            border-radius: 25px;
+            border:2px solid black;
+            padding:10px 30px;
+            border-bottom: 4px solid black;
+        }
+        .btn button:hover{
+            background-color: blanchedalmond;
+        }
+        @media screen and (max-width: 767px){
+            .text-container{
+                flex-direction: column;
+            }
+            .text h1{
+                font-size:2rem;
+            }
+            .text p{
+                font-size: 1.2rem;
+            }
+            .list{
+                font-size: 1.2rem;
+            }
+            .image img{
+                width:250px;
+                height:250px;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width: 1023px){
+            .text-container{
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <div class="text">
+        <h1>stack data structure</h1>
+        <p>A Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out). LIFO implies that the element that is inserted last, comes out first and FILO implies that the element that is inserted first, comes out last.
+        </p>
+        <ul class="list">
+        <p>Think of it this way:</p>
+            <li>Pushing an element onto the stack is like adding a new book on top.</li>
+            <li>Popping an element removes the top plate from the stack.</li>
+            <p>key operations of stack data structure:</p>
+            <li>Push: Adds an element to the top of the stack.</li>
+            <li>Pop: Removes the top element from the stack.</li>
+            <li>Peek: Returns the top element without removing it.</li>
+            <li>IsEmpty: Checks if the stack is empty.</li>
+            <li>IsFull: Checks if the stack is full (in case of fixed-size arrays).</li>
+        </ul>
+        </div>
+        <div class="image">
+            <img src="img/questions-186_256 (1).gif"/>
+        </div>
+    </div>
+    <div class="btn">
+        <button><a href="stack_main.html">Get Started</a></button>
+    </div>
+    
+</body>
+</html>

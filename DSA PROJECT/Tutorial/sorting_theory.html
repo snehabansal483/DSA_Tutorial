@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting tutorial</title>
+    <style>
+        html,body{
+            text-transform: capitalize;
+            margin:0;
+            padding:0;
+            background-color: violet;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        .heading{
+            text-align: center;
+            display: flex;
+            color:white;
+        }
+        .text h1{
+            font-size: 3rem;
+        }
+        .text p{
+            font-size: 1.5rem;
+        }
+        .list p{
+            color:white;
+        }
+        .list{
+            text-align: start;
+            font-size:1.5rem;
+            color:white;
+        }
+        .image img{
+            width:500px;
+            height:500px;
+        }
+        .btn{
+            text-align:center;
+            margin:30px;
+            margin-bottom: 20px;
+        }
+        .btn a{
+            text-decoration: none;
+            color:black;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .btn button{
+            border-radius: 25px;
+            border:2px solid black;
+            padding:10px 30px;
+            border-bottom: 4px solid black;
+        }
+        .btn button:hover{
+            background-color: blanchedalmond;
+        }
+        @media screen and (max-width: 767px){
+            .heading{
+                flex-direction: column;
+            }
+            .text h1{
+                font-size: 2rem;
+            }
+            .text p{
+                font-size: 1rem;
+            }
+            .list li{
+                font-size: 1rem;
+            }
+            .image img{
+                width:300px;
+                height:300px;
+            }
+        }
+        @media screen and (min-width: 767px) and (max-width: 1024px){
+            .heading{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="text">
+        <h1>Sorting Algorithm</h1>
+        <p>A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.</p>
+        <ul class="list">
+            <p>Their are various sorting algorithm:</p>
+            <li>Selection sort</li>
+            <p>Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element from the unsorted portion of the list and moving it to the sorted portion of the list.
+            In this overall time complexity is O(N^2) & axuiliary space is O(1).     
+            </p>
+            <li>bubble sort</li>
+            <p>Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
+            In this overall time complexity is O(N^2) & axuiliary space is O(1).     
+            </p>
+            <li>insertion sort</li>
+            <p>Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list. It is a stable sorting algorithm, meaning that elements with equal values maintain their relative order in the sorted output.
+               In this overall time complexity is O(N^2) & axuiliary space is O(1).     
+            </p>
+            <li>merge sort</li>
+            <p>Merge sort is a sorting algorithm that follows the divide-and-conquer approach. It works by recursively dividing the input array into smaller subarrays and sorting those subarrays then merging them back together to obtain the sorted array.</p>
+            <p>Merge sort is a popular sorting algorithm known for its efficiency and stability. It follows the divide-and-conquer approach to sort a given array of elements.</p>
+            <p>Here’s a step-by-step explanation of how merge sort works:</p>
+            <li>Divide: Divide the list or array recursively into two halves until it can no more be divided</li>
+            <li>Conquer: Each subarray is sorted individually using the merge sort algorithm.</li>
+            <li>Merge: The sorted subarrays are merged back together in sorted order. The process continues until all elements from both subarrays have been merged.</li><br>
+            <li>quicksort</li>
+            <p>QuickSort is a sorting algorithm based on the Divide and Conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.</p>     
+        </ul>
+        </div>
+        <div class="image">
+            <img src="img/Sorting thoughts-amico.png"/>
+        </div>
+    </div>
+    <div class="btn">
+        <button><a href="sorting_main.html">Get Started</a></button>
+    </div>
+    
+</body>
+</html>

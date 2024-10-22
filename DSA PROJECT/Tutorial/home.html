@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        html,body{
+            margin:0;
+            padding:0;
+            overflow-x: hidden;
+            text-transform: capitalize;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(img/dsa.jpg);
+        }
+        .container{
+            text-align: center;
+        }
+        .container h1{
+            font-size: 4rem;
+            color:white;
+        }
+        .container h1:hover{
+            font-size:3rem;
+            color:blue;
+        }
+        .container button{
+            border-radius: 25px;
+            border:2px solid black;
+            padding:10px;
+            margin: 10px;
+            background-color: bisque;
+        }
+        .container a{
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+            font-size:1rem;
+        }
+        .container button:hover{
+            background-color:rgba(0, 0, 255, 0.431);
+        }
+        @media screen and (max-width: 767px){
+            .container h1{
+                font-size: 2rem;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>data structure & <br>algorithm</h1>
+    <button><a href="stack_theory.html">Stack (LIFO)</a></button>
+    </div>
+    <div class="container">
+        <button><a href="queue_theory.html">Queue (FIFO)</a></button>
+    </div>
+    <div class="container">
+        <button><a href="linkedlist_theory.html">Max & Min</a></button>
+    </div>
+    <div class="container">
+        <button><a href="sorting_theory.html">Sorting</a></button>
+    </div>
+    <div class="container">
+        <button><a href="theory.html">Backtracking</a></button>
+    </div>
+    <div class="container">
+        <button><a href="/Mainpage.html">Back</a></button>
+    </div>
+    
+    
+</body>
+</html>
