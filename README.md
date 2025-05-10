@@ -5,7 +5,7 @@ An educational platform where users can **learn and practice DSA (Data Structure
 ## 🚀 Live Demo
 
 Check out the live website here:  
-👉 [Educa DSA Website](https://dsatutorial.vercel.app/)
+👉 [Educa DSA Website](https://educadsa.netlify.app)
 
 ---
 
