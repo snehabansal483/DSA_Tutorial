@@ -35,9 +35,7 @@ It covers essential topics and aims to make DSA learning simple and effective.
 
 ## 📷 Screenshot
 
-![Educa DSA Website Screenshot](./screenshot.png)
-
-*(Make sure to upload your project screenshot as `screenshot.png` in your repo)*
+![Educa DSA Website Screenshot](https://github.com/snehabansal483/DSA_Tutorial/blob/main/DSA%20PROJECT/img/Home_page.png)
 
 ---
 
